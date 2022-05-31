@@ -8,14 +8,14 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework;
+namespace QChat\Framework;
 
-use MoChat\Framework\Exception\Handler\AuthExceptionHandler;
-use MoChat\Framework\Exception\Handler\CommonExceptionHandler;
-use MoChat\Framework\Exception\Handler\GuzzleRequestExceptionHandler;
-use MoChat\Framework\Exception\Handler\ValidationExceptionHandler;
-use MoChat\Framework\Middleware\CorsMiddleware;
-use MoChat\Framework\Middleware\ResponseMiddleware;
+use QChat\Framework\Exception\Handler\AuthExceptionHandler;
+use QChat\Framework\Exception\Handler\CommonExceptionHandler;
+use QChat\Framework\Exception\Handler\GuzzleRequestExceptionHandler;
+use QChat\Framework\Exception\Handler\ValidationExceptionHandler;
+use QChat\Framework\Middleware\CorsMiddleware;
+use QChat\Framework\Middleware\ResponseMiddleware;
 
 class ConfigProvider
 {

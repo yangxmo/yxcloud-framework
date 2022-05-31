@@ -8,14 +8,14 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework\WeWork;
+namespace QChat\Framework\WeWork;
 
 use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
 use EasyWeChat\Work\Server\Guard;
 use Hyperf\Di\Annotation\AnnotationCollector;
-use MoChat\Framework\Action\AbstractAction;
-use MoChat\Framework\Annotation\WeChatEventHandler;
-use MoChat\Framework\WeWork\EventHandler\AbstractEventHandler;
+use QChat\Framework\Action\AbstractAction;
+use QChat\Framework\Annotation\WeChatEventHandler;
+use QChat\Framework\WeWork\EventHandler\AbstractEventHandler;
 
 class Callback extends AbstractAction
 {

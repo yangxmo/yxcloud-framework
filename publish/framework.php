@@ -9,12 +9,12 @@ declare(strict_types=1);
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
 return [
-    // MoChat\Framework\Middleware\JwtAuthMiddleware jwt路由验证白名单
+    // QChat\Framework\Middleware\JwtAuthMiddleware jwt路由验证白名单
     'auth_white_routes' => [
         '/user/auth', '/weWork/callback',
     ],
 
-    // MoChat\Framework\Middleware\ResponseMiddleware 原生响应格式的路由
+    // QChat\Framework\Middleware\ResponseMiddleware 原生响应格式的路由
     'response_raw_routes' => [
         '/weWork/callback',
     ],
@@ -34,20 +34,20 @@ return [
         ],
         'providers' => [
             'app' => [
-                'name'    => \MoChat\Framework\Provider\WeWork\AppProvider::class,
-                'service' => App\Model\Corp::class, //  需要实现 MoChat\Framework\Contract\WeWork\AppConfigurable 接口
+                'name'    => \QChat\Framework\Provider\WeWork\AppProvider::class,
+                'service' => App\Model\Corp::class, //  需要实现 QChat\Framework\Contract\WeWork\AppConfigurable 接口
             ],
             'user' => [
-                'name'    => \MoChat\Framework\Provider\WeWork\UserProvider::class,
-                'service' => App\Model\Corp::class, //  需要实现 MoChat\Framework\Contract\WeWork\UserConfigurable 接口
+                'name'    => \QChat\Framework\Provider\WeWork\UserProvider::class,
+                'service' => App\Model\Corp::class, //  需要实现 QChat\Framework\Contract\WeWork\UserConfigurable 接口
             ],
             'externalContact' => [
-                'name'    => \MoChat\Framework\Provider\WeWork\ExternalContactProvider::class,
-                'service' => App\Model\Corp::class, //  需要实现 MoChat\Framework\Contract\WeWork\ExternalContactConfigurable 接口
+                'name'    => \QChat\Framework\Provider\WeWork\ExternalContactProvider::class,
+                'service' => App\Model\Corp::class, //  需要实现 QChat\Framework\Contract\WeWork\ExternalContactConfigurable 接口
             ],
             'agent' => [
-                'name'    => \MoChat\Framework\Provider\WeWork\AgentProvider::class,
-                'service' => App\Model\Corp::class, //  需要实现 MoChat\Framework\Contract\WeWork\AgentConfigurable 接口
+                'name'    => \QChat\Framework\Provider\WeWork\AgentProvider::class,
+                'service' => App\Model\Corp::class, //  需要实现 QChat\Framework\Contract\WeWork\AgentConfigurable 接口
             ],
         ],
     ],

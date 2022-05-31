@@ -8,11 +8,11 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework\Exception\Handler;
+namespace QChat\Framework\Exception\Handler;
 
 use Hyperf\ExceptionHandler\ExceptionHandler;
 use Hyperf\HttpMessage\Stream\SwooleStream;
-use MoChat\Framework\Constants\ErrorCode;
+use QChat\Framework\Constants\ErrorCode;
 use Psr\Http\Message\ResponseInterface;
 use Throwable;
 

@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace #NAMESPACE#;
 
-use MoChat\Framework\Action\AbstractAction;
+use QChat\Framework\Action\AbstractAction;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\RequestMapping;
 

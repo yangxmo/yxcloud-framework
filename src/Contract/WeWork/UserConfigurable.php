@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework\Contract\WeWork;
+namespace QChat\Framework\Contract\WeWork;
 
 interface UserConfigurable
 {

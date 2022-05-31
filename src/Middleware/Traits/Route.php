@@ -8,14 +8,14 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework\Middleware\Traits;
+namespace QChat\Framework\Middleware\Traits;
 
 use FastRoute\Dispatcher;
 use Hyperf\HttpServer\Contract\RequestInterface;
 use Hyperf\HttpServer\Router\Dispatched;
 use Hyperf\Utils\ApplicationContext;
-use MoChat\Framework\Constants\ErrorCode;
-use MoChat\Framework\Exception\CommonException;
+use QChat\Framework\Constants\ErrorCode;
+use QChat\Framework\Exception\CommonException;
 
 trait Route
 {

@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework\Log;
+namespace QChat\Framework\Log;
 
 use Psr\Container\ContainerInterface;
 

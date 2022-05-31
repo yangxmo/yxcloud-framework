@@ -8,14 +8,14 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework\WeWork;
+namespace QChat\Framework\WeWork;
 
 use EasyWeChat\Work\Application;
 use EasyWeChat\OpenWork\Application as OpenWorkApplication;
 use Hyperf\Contract\ConfigInterface;
-use MoChat\Framework\Constants\ErrorCode;
-use MoChat\Framework\Exception\CommonException;
-use MoChat\Framework\Provider\WeWork\AbstractProvider;
+use QChat\Framework\Constants\ErrorCode;
+use QChat\Framework\Exception\CommonException;
+use QChat\Framework\Provider\WeWork\AbstractProvider;
 
 /**
  * @method Application app(array $config = []) 获取wework.app

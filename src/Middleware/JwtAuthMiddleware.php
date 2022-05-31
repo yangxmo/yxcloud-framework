@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework\Middleware;
+namespace QChat\Framework\Middleware;
 
 use Hyperf\Contract\ConfigInterface;
-use MoChat\Framework\Middleware\Traits\Route;
+use QChat\Framework\Middleware\Traits\Route;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

@@ -12,7 +12,7 @@ namespace #SERVICE_NAMESPACE#;
 
 use #MODEL_NAMESPACE#\#MODEL#;
 use #INTERFACE_NAMESPACE#\#MODEL#ServiceInterface;
-use MoChat\Framework\Service\AbstractService;
+use QChat\Framework\Service\AbstractService;
 
 class #MODEL#Service extends AbstractService implements #MODEL#ServiceInterface
 {

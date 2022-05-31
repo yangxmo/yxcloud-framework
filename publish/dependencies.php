@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
 use Hyperf\Contract\StdoutLoggerInterface;
-use MoChat\Framework\Log\StdoutLoggerFactory;
+use QChat\Framework\Log\StdoutLoggerFactory;
 
 $dependencies = [];
 

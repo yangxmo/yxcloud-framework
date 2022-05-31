@@ -8,12 +8,12 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework\Command;
+namespace QChat\Framework\Command;
 
 use Hyperf\Command\Annotation\Command;
 use Hyperf\Command\Command as HyperfCommand;
-use MoChat\Framework\Event\PluginInstalled;
-use MoChat\Framework\Event\PluginUninstalled;
+use QChat\Framework\Event\PluginInstalled;
+use QChat\Framework\Event\PluginUninstalled;
 use Psr\Container\ContainerInterface;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Swoole\Coroutine\System;

@@ -8,9 +8,9 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework\Provider\WeWork;
+namespace QChat\Framework\Provider\WeWork;
 
-use MoChat\Framework\Contract\WeWork\UserConfigurable;
+use QChat\Framework\Contract\WeWork\UserConfigurable;
 
 class UserProvider extends AbstractProvider
 {

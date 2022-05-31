@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework\Model;
+namespace QChat\Framework\Model;
 
 use Hyperf\DbConnection\Model\Model;
 use Hyperf\Utils\Str;

@@ -1,5 +1,5 @@
 {
-    "name": "mochat/framework",
+    "name": "qchat-cloud/framework",
     "type": "library",
     "keywords": [
         "php",
@@ -7,10 +7,10 @@
         "mochat",
         "framework"
     ],
-    "description": "framework of mochat",
+    "description": "framework of qchat-cloud",
     "autoload": {
         "psr-4": {
-            "MoChat\\Framework\\": "src/"
+            "QChat\\Framework\\": "src/"
         },
         "files": [
             "src/Functions.php"
@@ -22,7 +22,7 @@
         }
     },
     "require": {
-        "php": ">=7.2",
+        "php": ">=8.0",
         "ext-swoole": ">=4.5"
     },
     "require-dev": {
@@ -45,7 +45,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "MoChat\\Framework\\ConfigProvider"
+            "config": "QChat\\Framework\\ConfigProvider"
         }
     }
 }

@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @contact  group@mo.chat
  * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
  */
-namespace MoChat\Framework\Exception;
+namespace QChat\Framework\Exception;
 
 use Hyperf\Server\Exception\ServerException;
-use MoChat\Framework\Constants\ErrorCode;
+use QChat\Framework\Constants\ErrorCode;
 
 class CommonException extends ServerException
 {
