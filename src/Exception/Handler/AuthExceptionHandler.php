@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 /**
- * This file is part of MoChat.
+ * This file is part of YxCloud.
  * @link     https://mo.chat
- * @document https://mochat.wiki
+ * @document https://YxCloud.wiki
  * @contact  group@mo.chat
- * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
+ * @license  https://github.com/YxCloud-cloud/YxCloud/blob/master/LICENSE
  */
-namespace QChat\Framework\Exception\Handler;
+namespace YxCloud\Framework\Exception\Handler;
 
 use Hyperf\Contract\StdoutLoggerInterface;
 use Hyperf\ExceptionHandler\ExceptionHandler;
 use Hyperf\HttpMessage\Stream\SwooleStream;
-use QChat\Framework\Constants\ErrorCode;
+use YxCloud\Framework\Constants\ErrorCode;
 use Qbhy\HyperfAuth\Exception\AuthException;
 use Qbhy\HyperfAuth\Exception\UnauthorizedException;
 use Qbhy\SimpleJwt\Exceptions\InvalidTokenException;
@@ -53,7 +53,7 @@ class AuthExceptionHandler extends ExceptionHandler
 
         ## 阻止异常冒泡
         $this->stopPropagation();
-        return $response->withHeader('Server', 'mochat')
+        return $response->withHeader('Server', 'YxCloud')
             ->withAddedHeader('Content-Type', 'application/json;charset=utf-8')
             ->withStatus($httpCode)
             ->withBody($dataStream);

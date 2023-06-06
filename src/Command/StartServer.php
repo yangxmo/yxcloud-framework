@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 /**
- * This file is part of MoChat.
+ * This file is part of YxCloud.
  * @link     https://mo.chat
- * @document https://mochat.wiki
+ * @document https://YxCloud.wiki
  * @contact  group@mo.chat
- * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
+ * @license  https://github.com/YxCloud-cloud/YxCloud/blob/master/LICENSE
  */
-namespace QChat\Framework\Command;
+namespace YxCloud\Framework\Command;
 
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\StdoutLoggerInterface;
@@ -68,8 +68,8 @@ class StartServer extends Command
     protected function configure()
     {
         $this
-            ->setDescription('Start mochat servers.')
-            ->addOption('daemonize', 'd', InputOption::VALUE_OPTIONAL, 'mochat server daemonize', false)
+            ->setDescription('Start YxCloud servers.')
+            ->addOption('daemonize', 'd', InputOption::VALUE_OPTIONAL, 'YxCloud server daemonize', false)
             ->addOption('clear', 'c', InputOption::VALUE_OPTIONAL, 'clear runtime container', false);
     }
 
@@ -145,7 +145,7 @@ class StartServer extends Command
 
         if ($this->daemonize) {
             $serverConfig['settings']['daemonize'] = 1;
-            $this->io->success('mochat server start success.');
+            $this->io->success('YxCloud server start success.');
         }
 
         Runtime::enableCoroutine(true, swoole_hook_flags());
@@ -161,7 +161,7 @@ class StartServer extends Command
         $pid = file_exists($pidFile) ? intval(file_get_contents($pidFile)) : false;
         if ($pid && Process::kill($pid, SIG_DFL)) {
             if (!Process::kill($pid, SIGTERM)) {
-                $this->io->error('old mochat server stop error.');
+                $this->io->error('old YxCloud server stop error.');
                 die();
             }
 

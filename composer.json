@@ -1,16 +1,16 @@
 {
-    "name": "qchat-cloud/framework",
+    "name": "yxcloud/framework",
     "type": "library",
     "keywords": [
         "php",
         "hyperf",
-        "mochat",
+        "yanxuan",
         "framework"
     ],
-    "description": "framework of qchat-cloud",
+    "description": "framework of yxcloud",
     "autoload": {
         "psr-4": {
-            "QChat\\Framework\\": "src/"
+            "YxCloud\\Framework\\": "src/"
         },
         "files": [
             "src/Functions.php"
@@ -23,20 +23,21 @@
     },
     "require": {
         "php": ">=8.0",
-        "ext-swoole": ">=4.5"
+        "ext-swoole": ">=5.0"
     },
     "require-dev": {
-        "96qbhy/hyperf-auth": "^2.2",
-        "friendsofphp/php-cs-fixer": "^2.14",
-        "hyperf/framework": "2.2.*",
-        "hyperf/testing": "2.2.*",
+        "friendsofphp/php-cs-fixer": "^2.19",
+        "hyperf/guzzle": "3.0.*",
+        "hyperf/testing": "3.0.*",
         "overtrue/wechat": "~4.0",
         "phpstan/phpstan": "^0.12",
-        "swoole/ide-helper": "dev-master",
-        "hyperf/guzzle": "2.2.*"
+        "swoole/ide-helper": "dev-master"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "easywechat-composer/easywechat-composer": true
+        }
     },
     "scripts": {
         "test": "co-phpunit -c phpunit.xml --colors=always",
@@ -45,7 +46,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "QChat\\Framework\\ConfigProvider"
+            "config": "YxCloud\\Framework\\ConfigProvider"
         }
     }
 }

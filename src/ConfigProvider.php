@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 /**
- * This file is part of MoChat.
+ * This file is part of YxCloud.
  * @link     https://mo.chat
- * @document https://mochat.wiki
+ * @document https://YxCloud.wiki
  * @contact  group@mo.chat
- * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
+ * @license  https://github.com/YxCloud-cloud/YxCloud/blob/master/LICENSE
  */
-namespace QChat\Framework;
+namespace YxCloud\Framework;
 
-use QChat\Framework\Exception\Handler\AuthExceptionHandler;
-use QChat\Framework\Exception\Handler\CommonExceptionHandler;
-use QChat\Framework\Exception\Handler\GuzzleRequestExceptionHandler;
-use QChat\Framework\Exception\Handler\ValidationExceptionHandler;
-use QChat\Framework\Middleware\CorsMiddleware;
-use QChat\Framework\Middleware\ResponseMiddleware;
+use YxCloud\Framework\Exception\Handler\AuthExceptionHandler;
+use YxCloud\Framework\Exception\Handler\CommonExceptionHandler;
+use YxCloud\Framework\Exception\Handler\GuzzleRequestExceptionHandler;
+use YxCloud\Framework\Exception\Handler\ValidationExceptionHandler;
+use YxCloud\Framework\Middleware\CorsMiddleware;
+use YxCloud\Framework\Middleware\ResponseMiddleware;
 
 class ConfigProvider
 {

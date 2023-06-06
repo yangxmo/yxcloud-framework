@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 /**
- * This file is part of MoChat.
+ * This file is part of YxCloud.
  * @link     https://mo.chat
- * @document https://mochat.wiki
+ * @document https://YxCloud.wiki
  * @contact  group@mo.chat
- * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
+ * @license  https://github.com/YxCloud-cloud/YxCloud/blob/master/LICENSE
  */
-namespace QChat\Framework\Command;
+namespace YxCloud\Framework\Command;
 
 use Swoole\Process;
 use Symfony\Component\Console\Command\Command;
@@ -28,7 +28,7 @@ class StopServer extends Command
 
     protected function configure()
     {
-        $this->setDescription('Stop mochat servers.');
+        $this->setDescription('Stop YxCloud servers.');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -37,21 +37,21 @@ class StopServer extends Command
         $pidFile = BASE_PATH . '/runtime/hyperf.pid';
         $pid = file_exists($pidFile) ? intval(file_get_contents($pidFile)) : false;
         if (!$pid) {
-            $io->note('mochat server pid is invalid.');
+            $io->note('YxCloud server pid is invalid.');
             return -1;
         }
 
         if (!Process::kill($pid, SIG_DFL)) {
-            $io->note('mochat server process does not exist.');
+            $io->note('YxCloud server process does not exist.');
             return -1;
         }
 
         if (!Process::kill($pid, SIGTERM)) {
-            $io->error('mochat server stop error.');
+            $io->error('YxCloud server stop error.');
             return -1;
         }
 
-        $io->success('mochat server stop success.');
+        $io->success('YxCloud server stop success.');
         return 0;
     }
 

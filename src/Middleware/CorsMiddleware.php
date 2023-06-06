@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 /**
- * This file is part of MoChat.
+ * This file is part of YxCloud.
  * @link     https://mo.chat
- * @document https://mochat.wiki
+ * @document https://YxCloud.wiki
  * @contact  group@mo.chat
- * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
+ * @license  https://github.com/YxCloud-cloud/YxCloud/blob/master/LICENSE
  */
-namespace QChat\Framework\Middleware;
+namespace YxCloud\Framework\Middleware;
 
 use Hyperf\Utils\Context;
 use Psr\Http\Message\ResponseInterface;
@@ -34,7 +34,7 @@ class CorsMiddleware implements MiddlewareInterface
             ->withHeader('Access-Control-Allow-Credentials', 'true')
             ->withHeader(
                 'Access-Control-Allow-Headers',
-                'Authorization,Accept,Content-Type,Origin,User-Agent,X-Requested-With,MoChat-Corp-Id,MoChat-Source-Type'
+                'Authorization,Accept,Content-Type,Origin,User-Agent,X-Requested-With,YxCloud-Corp-Id,YxCloud-Source-Type'
             )
             ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
 

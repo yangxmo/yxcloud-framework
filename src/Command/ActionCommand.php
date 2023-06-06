@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 /**
- * This file is part of MoChat.
+ * This file is part of YxCloud.
  * @link     https://mo.chat
- * @document https://mochat.wiki
+ * @document https://YxCloud.wiki
  * @contact  group@mo.chat
- * @license  https://github.com/mochat-cloud/mochat/blob/master/LICENSE
+ * @license  https://github.com/YxCloud-cloud/YxCloud/blob/master/LICENSE
  */
-namespace QChat\Framework\Command;
+namespace YxCloud\Framework\Command;
 
 use Hyperf\Command\Annotation\Command;
 use Hyperf\Command\Command as HyperfCommand;
@@ -38,7 +38,7 @@ class ActionCommand extends HyperfCommand
     public function configure()
     {
         parent::configure();
-        $this->setDescription('mochat - 生成action, 默认生成于 app/Action 目录下');
+        $this->setDescription('YxCloud - 生成action, 默认生成于 app/Action 目录下');
         $this->addOption(
             'force',
             'f',
